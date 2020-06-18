@@ -1,0 +1,62 @@
+# testing comments
+# can render online at:
+# https://dreampuf.github.io/GraphvizOnline/
+# http://www.webgraphviz.com/
+
+digraph G {
+  donate_to_tom [ label = "donate 5 bugs or
+  fish to Tom Nook" ];
+  reserve_blathers_tent [ label = "reserve a space for Blathers" ]
+  donate_to_tom -> reserve_blathers_tent;
+  reserve_blathers_tent -> blathers_tent;
+  blathers_tent -> shovel;
+  blathers_tent -> donate_to_blathers;
+  donate_to_blathers -> museum;
+  donate_to_blathers -> vaulting_pole;
+
+  shop_with_mabel -> able_sisters;
+  museum -> nooks_cranny;
+
+  nooks_cranny -> mabel;
+  mabel -> shop_with_mabel;
+
+  nooks_cranny -> upgrade_nooks_cranny;
+  mabel -> upgrade_nooks_cranny;
+
+  ladder -> redds_shop;
+  art_gallery -> redds_shop;
+
+  museum -> art_gallery;
+
+  five_stars -> lily_of_the_valley;
+
+  invite_three_potential_neighbors -> ladder;
+
+  invite_three_potential_neighbors -> resident_services;
+  nooks_cranny -> resident_services;
+
+  town_hall -> isabelle;
+  resident_services -> bridges;
+  resident_services -> inclines;
+
+  museum -> fences;
+  invite_three_potential_neighbors -> fences;
+
+  three_stars -> kk_slider;
+  isabelle -> kk_slider;
+
+  island_designer_app -> paths;
+
+  able_sisters -> label;
+
+  resident_services -> town_hall;
+  bridges -> town_hall;
+  nooks_cranny -> town_hall;
+  
+  town_hall -> kicks;
+  
+  three_stars -> five_stars;
+
+  kk_slider -> credits;
+  kk_slider -> island_designer_app;
+}
